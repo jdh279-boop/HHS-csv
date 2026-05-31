@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>HHS</title>
+<style>
+body{margin:0;background:#0f2137;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:sans-serif}
+.box{background:#fff;border-radius:16px;padding:24px;width:90%;max-width:340px}
+h2{text-align:center;margin-bottom:20px;color:#0f2137}
+a{display:block;padding:14px;margin-bottom:10px;border-radius:10px;background:#f0f0f0;text-decoration:none;color:#0f2137;font-weight:bold;font-size:16px}
+a:active{background:#ccc}
+#msg{margin-top:16px;padding:12px;background:#e8f4f4;border-radius:8px;text-align:center;font-weight:bold;color:#0e7c7b;display:none}
+</style>
+</head>
+<body>
+<div class="box">
+  <h2>Who are you?</h2>
+  <a href="#" id="b1">Jamie Hancock</a>
+  <a href="#" id="b2">James Thomas</a>
+  <a href="#" id="b3">Ian Breaker</a>
+  <a href="#" id="b4">Alice-May Hancock</a>
+  <a href="#" id="b5">Jodi Smith</a>
+  <div id="msg"></div>
+</div>
+<script>
+function tap(name) {
+  var m = document.getElementById('msg');
+  m.style.display = 'block';
+  m.textContent = 'Tapped: ' + name + ' ✅';
+}
+document.getElementById('b1').href='javascript:tap("Jamie Hancock")';
+document.getElementById('b2').href='javascript:tap("James Thomas")';
+document.getElementById('b3').href='javascript:tap("Ian Breaker")';
+document.getElementById('b4').href='javascript:tap("Alice-May Hancock")';
+document.getElementById('b5').href='javascript:tap("Jodi Smith")';
+</script>
+</body>
+</html>
